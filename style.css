@@ -1,0 +1,144 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr  5 fr;
+}
+
+header {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 20px;
+    
+}
+
+.dashboard {
+    font-size: 50px;
+    align-self: center;
+}
+
+
+
+.options, .extra {
+    font-size: 25px;
+    padding: 50px;
+}
+
+li {padding: 10px;
+list-style-type: none;}
+.sidebar {
+    grid-column: 1/2;
+    grid-row: 1/3;;
+    gap: 30px;
+    background-color: rgb(34, 100, 241);
+    color: white;
+}
+
+
+.searachBar{
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+input {display: flex;
+        flex-grow: 1;
+        flex-basis: auto;
+    width: 100%;}
+
+.notificationBar{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: right;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.greeting {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.buttons {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+main {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: lightgrey;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 10px;
+    box-shadow: inset 2px 2px 5px 1px;
+}
+
+.yourProjects {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    padding: 10px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.annoucnements{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.annoucementTexts {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.greeting {font-size: 30px;}
+.topic {
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 2px;
+}
+
+.trending {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.trendingTexts {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 40px;
+}
+
+.card{
+    height: 200px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border-left-style: solid;
+    border-left-width: 10px;
+    border-left-color: orange;
+    box-shadow: 0px 2px 5px 1px;
+}
+
+button{
+    background-color:  rgb(34, 100, 241);
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    width: 175px;
+    margin: 10px;
+}
